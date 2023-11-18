@@ -1,0 +1,254 @@
+
+    *{  margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth; /*menu-secciones de modo suave*/
+        overflow-x: hidden;
+    }
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    }
+
+    /*---------HEADER---------*/
+
+    header {
+        position: fixed;
+        background-color: #000000;
+        height: 20%;
+        width: 100vw;
+    }
+
+    /*------LOGOPatito--y--NombreCorporativo------*/
+
+    .nombre_gedpix img {
+        width: 85px;
+        margin-top: 1.8%;
+        margin-left: 1.8%;
+        
+    }
+    .color-nombre h2 {
+        font-size: 180%;
+        color: #faf7f7;
+        margin-left: 9%;
+        margin-top: -4.6%;
+        font-family: 'gonzi-expanded';
+    }
+    .color-nombre h1 {
+        font-size: 120%;
+        color: #faf7f7;
+        margin-left: 15.3%;
+        margin-top: -3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------MENÚ_Navegación---------*/
+
+    .menu {             /*Barra de Menú*/
+        margin-top: -1%;
+        margin-right: 20%;
+        display: flex;
+        width: 56%;
+        justify-content: space-around;
+        margin-left: 42%;
+        margin-left: 38%;
+    }
+    .menu a {            /*Palabras del menú*/
+        color: #faf7f7; 
+        text-decoration: none;
+        font-size: 120%;
+    }
+    .menu i {            /*Iconos al lado de las palabras del menú*/
+        font-size: 100%;
+        text-shadow: 2px 1px 0 #fd7b05;
+    }
+    .menu li {          /*Lista el menú*/
+        list-style: none;
+    }
+    .menu .activo {     /*El color naranja de Bienvenidos en el Menú*/
+        color: #f8b420;
+    }
+    .menu :hover {      /*Cambia de color el menú cuando pasamos por arriba*/
+        color:#00ff62;
+        transition: all 400ms ease;
+    }
+
+    /*---------SECTION_Bienvenidos---------*/
+
+    .Bienvenidos {          /*section*/
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+    }
+    .Bienvenidos img {      /*Imagen Patito*/
+        width: 70%;
+        height: 80%;
+        margin-left: 13%;
+        margin-top: 9.6%;  
+    }
+
+    /*---------SECTION_Quiénes_Somos---------*/
+
+    .nosotros { /*Section Quiénes Somos*/
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: #02072e;
+        margin-left: -0.7%;
+    }
+
+    .card {
+        width: 50%;
+        height: 50%;
+        margin: 20px;
+        margin-top: 10%;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #ffffff;
+        box-shadow: 1px 1px 5px 5px rgb(5, 255, 243);
+        cursor: pointer;
+        transition: all 400ms ease;
+    }
+    .card:hover {
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+    }
+    .card img {
+        width: 100%;
+        height: 210px;
+    }
+    .card .contenido {
+        padding: 15px;
+        text-align: center;
+    }
+   .card .contenido p {
+        line-height: 1.5;
+        color: #413f3f;
+   }
+   .card .contenido h3{
+        font-weight: 400;
+        margin-bottom: 15px;
+   }
+   .card .contenido h2{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+   /*.card .contenido a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #2fb4cc;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+   }*/
+   .card .contenido a:hover {
+        background: #2fb4cc;
+        color: #fff;
+   }
+ 
+    
+    /*---------SECTION_Soluciones_IT---------*/
+
+    .soluciones {
+        width: 100vw;
+        height: 100vh;
+        background-color: #413f40;
+    }
+
+     /*---------SECTION_Contáctenos---------*/
+
+   .contacto {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(24, 24, 26);
+        z-index: 1;
+    }
+
+    .contacto img {
+        width: 500px;
+        height: 100%;
+        margin-top: -0.1%;
+    }
+    .contenedor h2 {
+        color: #faf7f7;
+        font-size: 20%;
+        margin-left: 10%;
+        margin-top: 18%;
+    }
+    .contacto p {
+        color: #ffffff;
+        font-size: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5%;
+        margin-right: 15%;
+    }
+
+    .contacto video {
+        margin-left: 35%;
+        margin-top: 15%;
+        width: 500px; 
+        height: 280px;
+        box-shadow: 1px 1px 5px 5px #faf7f7;
+        border-radius: 5%;
+    }
+   
+    /*---------FOOTER---------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 180px;
+    padding: 2em;
+    background-color: #000000;
+}
+.footer-contenido h2 {
+    font-size: 2.2em; /*3em - 3 veces el tamaño de la letra actual*/
+    color: rgb(255, 104, 3);
+    margin-bottom: 3%;
+    margin-left: 39%;
+    text-shadow: 1px 1px 0 rgb(252, 251, 251);
+}
+
+.footer-contenido h1 {
+    font-size: 1.5em; /*3em - 3 veces el tamaño de la letra actual*/
+    color: white;
+    
+}
+
+.footer-contenido h3 {
+    margin-left: 58.5%;
+    margin-bottom: -2%;
+    color: rgb(255, 104, 3);
+    text-shadow: 1px 1px 0 rgb(252, 251, 251);
+}
+
+/*---------BOTÓN_Instagram---------*/
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.redes-sociales i {
+    font-size: 2.8em;
+    text-align: center;
+    cursor: pointer;
+    color: #ff88ff;
+    border-radius: 100% 100% 100% 100%;
+    text-shadow: 1.5px 1.5px 0 rgb(0, 0, 0);
+}
+
+.redes-sociales:hover i {
+    color: rgb(85, 233, 122);
+}
