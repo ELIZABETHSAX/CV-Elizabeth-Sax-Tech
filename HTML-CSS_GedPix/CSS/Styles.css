@@ -17,7 +17,8 @@
         position: fixed;
         background-color: #000000;
         height: 20%;
-        width: 100vw;
+        width: 100vw; 
+        z-index: 5;
     }
 
     /*------LOGOPatito--y--NombreCorporativo------*/
@@ -82,9 +83,8 @@
         background-color: #000000;
     }
     .Bienvenidos img {      /*Imagen Patito*/
-        width: 70%;
-        height: 80%;
-        margin-left: 13%;
+        width: 100vw;
+        height: 100vh;
         margin-top: 9.6%;  
     }
 
@@ -109,6 +109,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-left: 12%;
+        
     }
 
     .card {
@@ -117,6 +118,7 @@
         margin: 10px;
         margin-top: 3%;
         transition: 300ms; 
+        
     }
 
     .personaje, .personaje_2, .personaje_3 {
@@ -346,37 +348,29 @@
 
      /*---------SECTION_Contáctenos---------*/
 
-   .contacto {
+   .contacto-container {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        width: 100vw;
-        height: 100vh;
         background-color: rgb(24, 24, 26);
-        z-index: 1;
+        height: 100vh;
     }
-    .contacto img {
-        width: 500px;
+    .contacto-container img {
+        width: 550px;
         height: 100%;
         margin-top: -0.1%;
     }
-    .contacto h2 {
+  
+    .video-container p{
+        font-size: 20px;
+        margin-top: 6.5%;
+        margin-bottom: 6%;
+        margin-left: 30%;
         color: #faf7f7;
-        font-size: 150%;
-        margin-left: 10%;
+    }
+
+    .video-container video {
+        margin-left: 30%;
         margin-top: 1%;
-    
-    }
-    .contacto p {
-        color: #ffffff;
-        font-size: 120%;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 5%;
-        margin-right: 15%;
-        
-    }
-    .contacto video {
-        margin-left: 35%;
-        margin-top: 65%;
         width: 500px; 
         height: 280px;
         box-shadow: 1px 1px 5px 5px #faf7f7;
@@ -429,7 +423,7 @@
     font-size: 2.8em;
     text-align: center;
     cursor: pointer;
-    color: #ff88ff;
+    color: #f703c2;
     border-radius: 100% 100% 100% 100%;
     text-shadow: 1.5px 1.5px 0 rgb(0, 0, 0);
     margin-bottom: 50%;
